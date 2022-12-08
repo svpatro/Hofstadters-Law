@@ -9,10 +9,7 @@
 #include "TV.h"
 
 
-void sorting(){
-
-    
-
+void content(){
 
 
 
@@ -21,16 +18,36 @@ void sorting(){
 
 
 
+void sorting(){
+
+    system("clear");
+    std::string choice;
+    std::cout << "\n------------------------------------------------------------------------------------------" << std::endl;
+    std::cout << "Welcome to Sorting! \n\nPlease select an option from the list: \t\t\t|\n" << std::endl;
+    std::cout << "------------------------------------------------------------------------------------------\n" << std::endl;
+    std::cout << "Devices: \t\t\t\t Explanation:" << std::endl;
+    std::cout << std::endl;
+    std::cout << "A: Toshiba Gigabeat MP3 Player" << std::endl;
+    std::cout << "B: Galaxy S3 Smartphone Device" << std::endl;
+    std::cout << "C: Rebel T4 DSLR Camera" << std::endl;
+    std::cout << "D: Exit Program" << std::endl;
+    std::cout << std::endl;
+    std::cout << "Choice: ";
+    std::getline(std::cin, choice);
+
+}
+
 void storing(){
 
     system("clear");
     std::string choice;
     std::cout << "\n------------------------------------------------------------------------------------------" << std::endl;
-    std::cout << "Welcome to Storing! \n\nDBManager has detected the following devices: \t\t\t|\n" << std::endl;
-    std::cout << "> Toshiba Gigabeat MP3 Player" << std::endl;
-    std::cout << "> Galaxy S3 Smartphone Device" << std::endl;
-    std::cout << "> Nikon Rebel T4 DSLR Camera\n" << std::endl;
-    std::cout << "Please choose a device: " << std::endl;
+    std::cout << "\t\t\tWelcome to Storing! \n" << std::endl;
+    std::cout << "DBManager has detected the following devices: \t\t\t|\n" << std::endl;
+    std::cout << "> Toshiba Gigabeat MP3 Player \t\t\t|" << std::endl;
+    std::cout << "> Galaxy S3 Smartphone Device\t\t\t|" << std::endl;
+    std::cout << "> Nikon Rebel T4 DSLR Camera\t\t\t|\n" << std::endl;
+    std::cout << "Please choose a option from the list: " << std::endl;
     std::cout << "------------------------------------------------------------------------------------------\n" << std::endl;
     std::cout << "Devices: \t\t\t\t Explanation:" << std::endl;
     std::cout << std::endl;
@@ -97,9 +114,28 @@ void mainMenu(){
 
     }
 
-    if (choice == "B" || choice == "b"){
+    else if (choice == "B" || choice == "b"){
 
         storing();
+
+    }
+
+    else if (choice == "C" || choice == "c"){
+
+        sorting();
+
+    }
+
+    else if (choice == "D" || choice == "d"){
+
+        content();
+
+    }
+
+    else if (choice == "E" || choice == "e"){
+
+        system("clear");
+        std::exit(-1);
 
     }
 
