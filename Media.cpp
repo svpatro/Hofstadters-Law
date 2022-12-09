@@ -7,3 +7,9 @@ Media::Media(std::string title){
     this->title = title;
 
 };
+
+void Media::print(){
+
+    std::cout << "I am media" << std::endl;
+
+};

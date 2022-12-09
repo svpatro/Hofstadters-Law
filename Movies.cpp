@@ -2,10 +2,16 @@
 #include <string>
 #include "Movies.h"
 
-Movies::Movies(std::string title, std::string director, int episode, std::string genre) : Media(title){
+Movies::Movies(std::string title, std::string director, int year, std::string genre) : Media(title){
 
 this->director = director;
-this->episode = episode;
+this->year = year;
 this->genre = genre;
 
 };
+
+void Movies::print(){
+
+    std::cout << "I am a movie" << std::endl;    
+
+}

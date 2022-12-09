@@ -9,11 +9,12 @@ class Movies : public Media {
     public:
 
     Movies(std::string, std::string, int, std::string);
+    void print() override;
 
     protected:
 
     std::string director;
-    int episode;
+    int year;
     std::string genre;
 
 };

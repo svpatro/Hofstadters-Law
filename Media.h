@@ -8,7 +8,7 @@ class Media {
     public:
 
     Media(std::string);
-    void print();
+    virtual void print();
 
     protected:
 

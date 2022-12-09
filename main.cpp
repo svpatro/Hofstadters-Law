@@ -19,11 +19,8 @@ void content(){
     std::cout << "\t\tWelcome to Content Management! \t\t\n|" << std::endl;
     std::cout << "Please select an option from the list: \t\t\t|" << std::endl;
     std::cout << "------------------------------------------------------------------------------------------|\n" << std::endl;
-    std::cout << "Devices: \t\t\t\t Explanation:" << std::endl;
-    std::cout << std::endl;
-    std::cout << "A: Toshiba Gigabeat MP3 Player" << std::endl;
-    std::cout << "B: Galaxy S3 Smartphone Device" << std::endl;
-    std::cout << "C: Rebel T4 DSLR Camera" << std::endl;
+    std::cout << "A: Add file to database" << std::endl;
+    std::cout << "B: Remove file from database" << std::endl;
     std::cout << std::endl;
     std::cout << "R: Return to Main Menu" << std::endl;
     std::cout << std::endl;
@@ -47,10 +44,26 @@ void sorting(){
     std::cout << "\n------------------------------------------------------------------------------------------" << std::endl;
     std::cout << "Welcome to Sorting! \n\nPlease select an option from the list: \t\t\t|\n" << std::endl;
     std::cout << "------------------------------------------------------------------------------------------\n" << std::endl;
+    std::cout << "A: Sort by creator with most movies" << std::endl;
+    std::cout << "B: Sort by photos chronologically" << std::endl;
+    std::cout << "C: Sort by tv show with most episodes" << std::endl;
+    std::cout << "D: Custom Sort" << std::endl;
+    std::cout << std::endl;
+    std::cout << "R: Return to Main Menu" << std::endl;
     std::cout << std::endl;
     std::cout << "Choice: ";
     std::getline(std::cin, choice);
 
+    if (choice == "A" || choice == "a"){
+
+
+    }
+
+    if (choice == "R" || choice == "r"){
+
+        mainMenu();
+
+    }
 
 }
 
@@ -76,6 +89,36 @@ void storing(){
     std::cout << std::endl;
     std::cout << "Choice: ";
     std::getline(std::cin, choice);
+
+    if (choice == "A" || choice == "a"){
+
+        std::cout << std::endl;
+        std::cout << "All .mp3 Files were loaded onto Toshiba Gigabeat MP3 Player." << std::endl;
+        std::cout << std::endl;
+
+
+
+    }
+
+    if (choice == "B" || choice == "b"){
+
+        std::cout << std::endl;
+        std::cout << "All .mp3, .mp4, .jpeg, & .png files were stored onto Galaxy S3 Smartphone Device" << std::endl;
+        std::cout << std::endl;
+
+  
+
+    }
+
+    if (choice == "C" || choice == "c"){
+
+        std::cout << std::endl;
+        std::cout << "All .mp4, .png, & .jpeg files were stored onto Galaxy S3 Smartphone Device" << std::endl;
+        std::cout << std::endl;
+
+
+
+    }
 
     if (choice == "R" || choice == "r"){
 
@@ -115,7 +158,7 @@ void printing(){
 
 void mainMenu(){
 
-    system("clear");
+    //system("clear");
     std::string choice;
     std::cout << "\n-----------------------------------------------------------------------------------------" << std::endl;
     std::cout << "\t\t\tWelcome to the Main Menu of DBManager!" << std::endl;
@@ -167,10 +210,37 @@ void mainMenu(){
 
     }
 
+    else {
+
+        std::cout << std::endl;
+        std::cout << "The choice you have entered is not valid! Please run the program again." << std::endl;
+        std::cout << std::endl;
+
+    }
+
 }
 
 
 int main(){
+
+    int length = 5;
+
+    Media** media = new Media* [length]{
+
+        new Movies("Interstellar", "Christopher Nolan", 2014, "Science Fiction"),
+        new Movies("2001: A Space Odessey", "Stanley Kubrick", 1968, "Science Fiction"), 
+        new Movies("Tenet", "Christopher Nolan", 2020, "Science Fiction"),
+        new Movies("Inception", "Christopher Nolan", 2010, "Science Fiction"),
+        new Movies("Arrival", "Denis Villeneuve", 2016, "Science Fiction")
+
+    };
+
+    for (int i = 0; i < length; i++){
+
+        media[i]->print(); // Got this to run but not sure how to pass to other functions
+
+    }
+
 
     mainMenu();
 
