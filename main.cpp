@@ -24,12 +24,13 @@ void content(){
     std::cout << "A: Toshiba Gigabeat MP3 Player" << std::endl;
     std::cout << "B: Galaxy S3 Smartphone Device" << std::endl;
     std::cout << "C: Rebel T4 DSLR Camera" << std::endl;
-    std::cout << "D: Return to Main Menu" << std::endl;
+    std::cout << std::endl;
+    std::cout << "R: Return to Main Menu" << std::endl;
     std::cout << std::endl;
     std::cout << "Choice: ";
     std::getline(std::cin, choice);
 
-    if (choice == "D" || choice == "d"){
+    if (choice == "R" || choice == "r"){
 
         mainMenu();
 
@@ -70,12 +71,13 @@ void storing(){
     std::cout << "A: Toshiba Gigabeat MP3 Player\t\t\t .mp3" << std::endl;
     std::cout << "B: Galaxy S3 Smartphone Device\t\t\t .mp3, .mp4, .jpeg, .png" << std::endl;
     std::cout << "C: Rebel T4 DSLR Camera\t\t\t\t .mp4, .png, .jpeg" << std::endl;
-    std::cout << "D: Return to Main Menu" << std::endl;
+    std::cout << std::endl;
+    std::cout << "R: Return to Main Menu" << std::endl;
     std::cout << std::endl;
     std::cout << "Choice: ";
     std::getline(std::cin, choice);
 
-    if (choice == "D" || choice == "d"){
+    if (choice == "R" || choice == "r"){
 
         mainMenu();
 
@@ -97,12 +99,13 @@ void printing(){
     std::cout << "B: Print only music, only movies, only TV shows, only podcasts, or only videos" << std::endl;
     std::cout << "C: Print only content that can be listened to" << std::endl;
     std::cout << "D: Print only content that can be viewed" << std::endl;
-    std::cout << "E: Return to Main Menu" << std::endl;
+    std::cout << std::endl;
+    std::cout << "R: Return to Main Menu" << std::endl;
     std::cout << std::endl;
     std::cout << "Choice: ";
     std::getline(std::cin, choice);
 
-    if ( choice == "E" or choice == "e"){
+    if ( choice == "R" or choice == "r"){
 
         mainMenu();
 
