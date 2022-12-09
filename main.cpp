@@ -137,9 +137,9 @@ void printing(){
     std::cout << "\t\t\t\tWelcome to Printing!\t\t\t\t\t" << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t" << std::endl;
     std::cout << "\t\t\tPlease input an option to get started.\t\t\t\t" << std::endl;
-    std::cout << "-----------------------------------------------------------------------------------------" << std::endl;
+    std::cout << "-----------------------------------------------------------------------------------------\n" << std::endl;
     std::cout << "A: Print all content in the database" << std::endl;
-    std::cout << "B: Print only music, only movies, only TV shows, only podcasts, or only videos" << std::endl;
+    std::cout << "B: Print specific content in database" << std::endl;
     std::cout << "C: Print only content that can be listened to" << std::endl;
     std::cout << "D: Print only content that can be viewed" << std::endl;
     std::cout << std::endl;
@@ -158,7 +158,7 @@ void printing(){
 
 void mainMenu(){
 
-    //system("clear");
+    system("clear");
     std::string choice;
     std::cout << "\n-----------------------------------------------------------------------------------------" << std::endl;
     std::cout << "\t\t\tWelcome to the Main Menu of DBManager!" << std::endl;
@@ -234,12 +234,6 @@ int main(){
         new Movies("Arrival", "Denis Villeneuve", 2016, "Science Fiction")
 
     };
-
-    for (int i = 0; i < length; i++){
-
-        media[i]->print(); // Got this to run but not sure how to pass to other functions
-
-    }
 
 
     mainMenu();

@@ -1,3 +1,4 @@
-# Final Project
+# Hofstadter's Law
 
-Final project for CS 222 - Hosted on Github for compatibility purposes. 
+Final project for Intermediate C++ - Hosted on Github for compatibility purposes.
+
