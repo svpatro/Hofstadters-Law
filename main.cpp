@@ -71,6 +71,23 @@ void sorting(Media** arr, int length){
 
     if (choice == "A" || choice == "a"){
 
+        system("clear");
+        std::cout << "Not Yet Implemented!" << std::endl;
+
+
+    }
+
+    if (choice == "B" || choice == "b"){
+
+        system("clear");
+        std::cout << "Not Yet Implemented!" << std::endl;
+
+    }
+
+    if (choice == "C" || choice == "c"){
+
+        system("clear");
+        std::cout << "Not Yet Implemented!" << std::endl;
 
     }
 
