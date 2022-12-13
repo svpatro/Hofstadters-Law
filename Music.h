@@ -9,6 +9,7 @@ class Music : public Media {
     public:
 
     Music(std::string, std::string, int, std::string);
+    void print();
 
     protected:
 

@@ -9,6 +9,7 @@ class Podcasts : public Media {
     public:
 
     Podcasts(std::string, std::string, int, int, int);
+    void print();
 
     protected:
 

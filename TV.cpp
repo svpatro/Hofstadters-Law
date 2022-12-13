@@ -11,3 +11,9 @@ TV::TV(std::string title, std::string director, int year, int season, int episod
     this->genre = genre;
     
 };
+
+void TV::print(){
+
+    std::cout << "[TV] " << title << " (" << year << ") by " << director << " [S" << season << "E" << episode << "]" << " [" << genre << "] " << std::endl;
+
+}

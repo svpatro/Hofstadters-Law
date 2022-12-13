@@ -9,4 +9,10 @@ Music::Music(std::string title, std::string artist, int year, std::string genre)
     this->genre = genre;
 
 
-};
+}
+
+void Music::print() {
+
+    std::cout << "[Music] " << title << " (" << year << ")" << " by " << artist << " [" << genre << "]" << std::endl;
+
+}

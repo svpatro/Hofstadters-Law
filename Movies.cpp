@@ -12,6 +12,6 @@ this->genre = genre;
 
 void Movies::print(){
 
-    std::cout << "I am a movie" << std::endl;    
+    std::cout << "[Movie] " << title << " (" << year << ")" << " by " << director << " [" << genre << "] " << std::endl;    
 
 }

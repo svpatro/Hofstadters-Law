@@ -9,6 +9,7 @@ class TV : public Media {
     public:
 
     TV(std::string, std::string, int, int, int, std::string);
+    void print();
 
     protected:
 

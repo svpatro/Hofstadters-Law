@@ -9,6 +9,7 @@ class Photos : public Media {
     public:
 
     Photos(std::string, int);
+    void print();
 
     protected:
 

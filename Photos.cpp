@@ -7,3 +7,9 @@ Photos::Photos(std::string title, int year) : Media(title){
     this->year = year;
 
 };
+
+void Photos::print(){
+
+    std::cout << "[Photo] " << title << " (" << year << ") " << std::endl; 
+
+}
