@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+// Use chrono library
 #include <string>
 #include "Media.h"
 #include "Movies.h"
@@ -9,7 +10,6 @@
 #include "TV.h"
 
 void mainMenu(Media**, int);
-
 
 void content(Media** arr, int length){
 
@@ -48,8 +48,6 @@ void content(Media** arr, int length){
     }
 
 }
-
-
 
 void sorting(Media** arr, int length){
 
@@ -166,7 +164,6 @@ void storing(Media** arr, int length){
     }
     
 }
-
 
 void printing(Media** arr, int length){
 
@@ -339,7 +336,6 @@ void mainMenu(Media** arr, int length){
     }
 
 }
-
 
 int main(){
 
