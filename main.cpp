@@ -1,3 +1,10 @@
+/*
+
+Author: Shamik V. Patro
+
+*/
+
+
 #include <iostream>
 #include <stdlib.h>
 // Use chrono library
@@ -165,6 +172,13 @@ void storing(Media** arr, int length){
     
 }
 
+void printOptionB(Media** arr, int length){
+
+    std::cout << "Option B selected" << std::endl;
+
+
+}
+
 void printing(Media** arr, int length){
 
     system("clear");
@@ -208,7 +222,8 @@ void printing(Media** arr, int length){
     if (choice == "B" || choice == "b"){
 
         system("clear");
-        std::cout << "\nNot Implemented Yet!\n" << std::endl;
+
+        printOptionB(arr, length);
 
     }
 

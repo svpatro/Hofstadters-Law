@@ -1,3 +1,9 @@
+/*
+
+Author: Shamik V. Patro
+
+*/
+
 #pragma once
 #include <string>
 #include "Media.h"
