@@ -22,34 +22,34 @@ Final project for Intermediate C++ - Hosted on Github for compatibility purposes
 
 The minimum viable product of this project will satisfy the following user stories:
 
-    1. Begin the program with a menu which allows the user to perform a series of tasks:
+1. Begin the program with a menu which allows the user to perform a series of tasks:
 
-        a. Print all content in the database
-        b. Print only music, only movies, only TV shows, only podcasts, or only photos
-        c. Print all content which can be listened to
-        d. Print all content which can be viewed
-        e. Quit the program
+    a. Print all content in the database
+    b. Print only music, only movies, only TV shows, only podcasts, or only photos
+    c. Print all content which can be listened to
+    d. Print all content which can be viewed
+    e. Quit the program
 
 
-    2. Suppose we have three devices plugged in. The first device is an MP3 player- it can only store audio files. The second device is a smartphone- it can store any type of file. The third device is a camera- it can only store visual files.  Allow the user to attempt to load content onto any of these devices.  (Note: You can simply have a printout saying "<some content> was loaded onto the <device>", this is only a simulation. However, make sure that only the correct types of files can be loaded onto any device)
+2. Suppose we have three devices plugged in. The first device is an MP3 player- it can only store audio files. The second device is a smartphone- it can store any type of file. The third device is a camera- it can only store visual files.  Allow the user to attempt to load content onto any of these devices.  (Note: You can simply have a printout saying "<some content> was loaded onto the <device>", this is only a simulation. However, make sure that only the correct types of files can be loaded onto any device)
 
-    3. Ensure that your database has at least 5 examples of each file type*.
-        a. Music: title, creator name (artist), year, genre
-        b. Movie: title, creator name (director), year, genre
-        c. TV Show: title, creator name (director), year, season, episode, genre
-        d. Podcast: title, creator name, year, season, episode
-        e. Photo: title, year
+3. Ensure that your database has at least 5 examples of each file type*.
+    a. Music: title, creator name (artist), year, genre
+    b. Movie: title, creator name (director), year, genre
+    c. TV Show: title, creator name (director), year, season, episode, genre
+    d. Podcast: title, creator name, year, season, episode
+    e. Photo: title, year
 
-    4. Allow the user to sort subsets of the database based on at least two types of criteria. For example, sort all episodic files based on their episode number or sort all files which have a creator based on their creator’s name
+4. Allow the user to sort subsets of the database based on at least two types of criteria. For example, sort all episodic files based on their episode number or sort all files which have a creator based on their creator’s name
 
-    5. Come up with 3 interesting queries which you can run on your database. You can use your own or use some of these examples (Note- your query must return something, don’t choose a query which does not have an answer):
-        a. What is the oldest music file in the database which belongs to the ‘Rock’ genre?
-        b. Which creator has the most movies in the database before 2000?
-        c. How many photos in the database have a filename which begins with the letter ‘J’?
-        d. Which year has the most files in the database?
-        e. Which has more files in the database- odd numbered years or even numbered years?
+5. Come up with 3 interesting queries which you can run on your database. You can use your own or use some of these examples (Note- your query must return something, don’t choose a query which does not have an answer):
+    a. What is the oldest music file in the database which belongs to the ‘Rock’ genre?
+    b. Which creator has the most movies in the database before 2000?
+    c. How many photos in the database have a filename which begins with the letter ‘J’?
+    d. Which year has the most files in the database?
+    e. Which has more files in the database- odd numbered years or even numbered years?
 
-    6. The entire program compiles, satisfies the requirements on the rubric (see Canvas), and does not have any unhandled exceptions. This includes protection against a malicious user attempting to break the program. Additionally, the program is free of infinite loops or other undesirable behaviors.
+6. The entire program compiles, satisfies the requirements on the rubric (see Canvas), and does not have any unhandled exceptions. This includes protection against a malicious user attempting to break the program. Additionally, the program is free of infinite loops or other undesirable behaviors.
 
 
 
